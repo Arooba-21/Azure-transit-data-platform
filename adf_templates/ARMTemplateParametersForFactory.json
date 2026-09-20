@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "adf-transit-project"
+        },
+        "ls_adls_transit_accountKey": {
+            "value": ""
+        },
+        "ls_azuresql_transit_password": {
+            "value": ""
+        },
+        "ls_adls_transit_properties_typeProperties_url": {
+            "value": "https://<your-storage-account-name>.dfs.core.windows.net/"
+        },
+        "ls_azuresql_transit_properties_typeProperties_server": {
+            "value": "<your-sql-server-name>.database.windows.net"
+        },
+        "ls_azuresql_transit_properties_typeProperties_database": {
+            "value": "db_transit"
+        },
+        "ls_azuresql_transit_properties_typeProperties_userName": {
+            "value": "<your-sql-admin-username>"
+        },
+        "Azuresqlpassword_properties_typeProperties_baseUrl": {
+            "value": "https://<your-keyvault-name>.vault.azure.net/"
+        }
+    }
+}
